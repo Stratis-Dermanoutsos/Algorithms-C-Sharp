@@ -25,6 +25,10 @@ namespace Sorting_Functions
             Console.WriteLine("Merge Sort (float): " + new MergeSort<float>(floats).ToString());
             Console.WriteLine("Merge Sort (int): " + new MergeSort<int>(integers).ToString());
             Console.WriteLine("Merge Sort (char): " + new MergeSort<char>(characters).ToString());
+            Console.WriteLine("\n");
+            Console.WriteLine("Quick Sort (float): " + new QuickSort<float>(floats).ToString());
+            Console.WriteLine("Quick Sort (int): " + new QuickSort<int>(integers).ToString());
+            Console.WriteLine("Quick Sort (char): " + new QuickSort<char>(characters).ToString());
         }
     }
 }
