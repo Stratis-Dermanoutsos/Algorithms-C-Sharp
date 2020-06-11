@@ -21,6 +21,10 @@ namespace Sorting_Functions
             Console.WriteLine("Insertion Sort (float): " + new InsertionSort<float>(floats).ToString());
             Console.WriteLine("Insertion Sort (int): " + new InsertionSort<int>(integers).ToString());
             Console.WriteLine("Insertion Sort (char): " + new InsertionSort<char>(characters).ToString());
+            Console.WriteLine("\n");
+            Console.WriteLine("Merge Sort (float): " + new MergeSort<float>(floats).ToString());
+            Console.WriteLine("Merge Sort (int): " + new MergeSort<int>(integers).ToString());
+            Console.WriteLine("Merge Sort (char): " + new MergeSort<char>(characters).ToString());
         }
     }
 }
