@@ -10,6 +10,6 @@ Instead, they prepare an output string.
 
 
 
-* Each algorithm has its own class for my own writing purposes. 
+Each algorithm has its own class for my own writing purposes. 
 
 Of course, also very easy to convert to 1 class with multiple sorting methods.
