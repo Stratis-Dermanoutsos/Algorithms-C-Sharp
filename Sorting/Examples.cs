@@ -14,10 +14,6 @@ namespace Sorting_Functions
             Console.WriteLine("Bubble Sort (int): "+ new BubbleSort<int>(integers).ToString());
             Console.WriteLine("Bubble Sort (char): " + new BubbleSort<char>(characters).ToString());
             Console.WriteLine("\n");
-            Console.WriteLine("Selection Sort (float): " + new SelectionSort<float>(floats).ToString());
-            Console.WriteLine("Selection Sort (int): " + new SelectionSort<int>(integers).ToString());
-            Console.WriteLine("Selection Sort (char): " + new SelectionSort<char>(characters).ToString());
-            Console.WriteLine("\n");
             Console.WriteLine("Insertion Sort (float): " + new InsertionSort<float>(floats).ToString());
             Console.WriteLine("Insertion Sort (int): " + new InsertionSort<int>(integers).ToString());
             Console.WriteLine("Insertion Sort (char): " + new InsertionSort<char>(characters).ToString());
@@ -26,9 +22,21 @@ namespace Sorting_Functions
             Console.WriteLine("Merge Sort (int): " + new MergeSort<int>(integers).ToString());
             Console.WriteLine("Merge Sort (char): " + new MergeSort<char>(characters).ToString());
             Console.WriteLine("\n");
+            Console.WriteLine("Selection Sort (float): " + new SelectionSort<float>(floats).ToString());
+            Console.WriteLine("Selection Sort (int): " + new SelectionSort<int>(integers).ToString());
+            Console.WriteLine("Selection Sort (char): " + new SelectionSort<char>(characters).ToString());
+            Console.WriteLine("\n");
             Console.WriteLine("Quick Sort (float): " + new QuickSort<float>(floats).ToString());
             Console.WriteLine("Quick Sort (int): " + new QuickSort<int>(integers).ToString());
             Console.WriteLine("Quick Sort (char): " + new QuickSort<char>(characters).ToString());
+
+            // Usage of the merged class
+            Sorter<char> charSorter = new Sorter<char>();
+            characters = charSorter.BubbleSort(characters);
+            characters = charSorter.InsertionSort(characters);
+            characters = charSorter.MergeSort(characters).ToArray();
+            characters = charSorter.SelectionSort(characters);
+            characters = charSorter.QuickSort(characters, 0, characters.Length - 1);
         }
     }
 }
