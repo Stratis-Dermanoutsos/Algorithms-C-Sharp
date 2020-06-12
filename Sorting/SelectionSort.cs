@@ -9,8 +9,6 @@ namespace Sorting_Functions
         public SelectionSort(T[] list)
         {
             // Algorithm {
-            int smallestItemIndex = 0;
-
             for (int i = 0; i < list.Length; i++) {
                 int min = i; // Set the current index as minimum
                 T temp = list[i];
