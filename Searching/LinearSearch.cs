@@ -1,4 +1,4 @@
-public int LinearSearch(T[] list, T item) // O(n)
+int LinearSearch(T[] list, T item) // O(n)
 {
   for (int i = 0; i < list.Length; i++)
     if (Comparer<T>.Default.Compare(list[i], item) == 0)
