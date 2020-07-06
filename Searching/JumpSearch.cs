@@ -1,8 +1,9 @@
 int JumpSearch(T[] list, T item) // Between O(logn) and O(n)
 {
-  // number of elements to skip with each step
   int n = list.Length;
+  // number of elements to skip with each step
   int step = (int)Math.Floor(Math.Sqrt(n));
+
   int prev = 0;
 
   // Jump as many times as needed to just barely get past the specified item
