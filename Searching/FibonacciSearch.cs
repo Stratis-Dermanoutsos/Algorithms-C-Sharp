@@ -1,8 +1,5 @@
 // Utility function to find minimum of two elements 
-int min(int x, int y)
-{
-  return (x <= y) ? x : y;
-}
+int min(int x, int y) { return (x <= y) ? x : y; }
 
 int FibonacciSearch(T[] list, T item) // O(logn)
 {
