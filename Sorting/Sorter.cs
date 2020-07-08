@@ -25,7 +25,6 @@ namespace Sorting_Functions
         // Insertion Sort {
         public T[] InsertionSort(T[] list) // O(n^2)
         {
-            
             for (int i = 0; i < list.Length-1; i+=2)
                 for (int j = i+1; j < list.Length; j++)
                     if (Comparer<T>.Default.Compare(list[j], list[i]) < 0) { // Ascending order
@@ -44,7 +43,7 @@ namespace Sorting_Functions
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
         // Merge Sort {
-        public List<T> MergeSort(T[] list) // O(n*log(n))
+        public List<T> MergeSort(T[] list) // O(n*logn)
         {
             List<T> myList = list.OfType<T>().ToList();
 
@@ -119,7 +118,7 @@ namespace Sorting_Functions
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
         // Quick Sort {
-        public T[] QuickSort(T[] list, int left, int right) // O(n*log(n))
+        public T[] QuickSort(T[] list, int left, int right) // O(n*logn)
         {
             int pivot; // Index of our pivot point
 
