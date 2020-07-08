@@ -21,8 +21,7 @@ int FibonacciSearch(T[] list, T item) // O(logn)
   int offset = -1;
 
   // While there are elements to be inspected. Note that we compare list[fibMm2] with item. When fibM becomes 1, fibMm2 becomes 0
-  while (fibM > 1)
-  {
+  while (fibM > 1) {
     // Check if fibMm2 is a valid location 
     int i = min(offset + fibMMm2, n - 1);
 
