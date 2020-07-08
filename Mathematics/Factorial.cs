@@ -1,4 +1,4 @@
-System.Numerics.BigInteger Factorial(int n) // We start counting from 0
+System.Numerics.BigInteger Factorial(int n)
 {
   if (n < 0) return -1; // n must be non-negative
 
