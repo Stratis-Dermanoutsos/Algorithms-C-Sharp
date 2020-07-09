@@ -1,13 +1,13 @@
 // A utility function to find the vertex with minimum distance value, from the 
 // set of vertices not yet included in shortest path tree 
-int MinDistance(int[] dist, bool[] sptSet)
+int MinDistance(int[] dist, bool[] isInShortestPath)
 {
   // Initialize min value 
   int min = int.MaxValue;
   int minIndex = -1;
 
   for (int i = 0; i < dist.Length; i++)
-    if (sptSet[i] == false && dist[i] <= min) {
+    if (isInShortestPath[i] == false && dist[i] <= min) {
       min = dist[i];
       minIndex = i;
     }
