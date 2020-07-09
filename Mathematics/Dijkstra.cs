@@ -46,7 +46,7 @@ int[] Dijkstra(int[,] graph, int start)
 
     // Update distanceOf value of the adjacent vertices of the picked vertex
     for (int i = 0; i < length; i++)
-      // Update distanceOf[i] only if is not in sptSet, there is an edge from minIndex 
+      // Update distanceOf[i] only if is not in isInShortestPath, there is an edge from minIndex 
       // to i, and total weight of path from start to i through minIndex is smaller 
       // than current value of distanceOf[i] 
       if (!isInShortestPath[i] && graph[minIndex, i] != 0 && distanceOf[minIndex] != int.MaxValue 
