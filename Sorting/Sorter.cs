@@ -158,5 +158,28 @@ namespace Sorting_Functions
             }
         }
         // }
+
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+        // Counting Sort {
+        public int[] CountingSort(int[] array) // O(n+k)
+        {
+            int[] count = new int[array.Max() + 1];
+
+            // Count our elements' occurences
+            for (int i = 0; i < array.Length; i++)
+                count[array[i]]++;
+
+            int counter = 0;
+            /* Build the output array. */
+            for (int i = 0; i < count.Length; i++)
+                while (count[i] > 0) {
+                    array[counter++] = i;
+                    count[i]--;
+                }
+
+            return array;
+        }
+        // }
     }
 }
